@@ -40,7 +40,7 @@ def send_email():
         print(attachment)
         server = smtplib.SMTP('smtp-relay.sendinblue.com', 587)
         server.starttls()
-        server.login('jashuva.peyyala97@gmail.com', 'Hg5DjaOfXNnUy7bm' )
+        server.login('***************', '***************' )
         text = msg.as_string()
         server.sendmail(from_address, [to_address, cc_email, bcc_email], text)
         server.quit()
